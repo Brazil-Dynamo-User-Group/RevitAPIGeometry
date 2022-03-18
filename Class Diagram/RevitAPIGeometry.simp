@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="12.79" multi-file="no" uid="simp0f7679fdc57f45579f02dc59362c7bfe">
+  <meta>
+    <name>RevitAPIGeometry</name>
+    <authors>Ricardo Freitas</authors>
+    <description>Diagrama de classes do Projeto RevitAPIGoemetry
+
+Github
+https://github.com/Brazil-Dynamo-User-Group/RevitAPIGeometry</description>
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>6</value>
+      </counter>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>1</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="group" type="Group" />
+        <value>181</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>7</value>
+      </counter>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment" type="Comment" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment-connector" type="Comment Connector" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="universal-connector" type="Universal Connector" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>8</value>
+      </counter>
+      <counter>
+        <item-type type-id="generalization" type="Generalization" />
+        <value>3</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>12</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-40f47cbe89b54e8b91c2a1b444316ae9" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name>Ricardo</first-name>
+        <last-name>Freitas</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-e55fc8f4aeb44be6984aed7a8716d70f" />
+  <types default="C#">
+    <type-sets>
+      <type-set file="CSharpTypes.xml" />
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <type id="Class:422a7514825b4d0b9ff9866222710877" tid="" name="GeometryObject" description="" class-ref="422a7514825b4d0b9ff9866222710877" />
+      <type id="List&lt;GeometryObject&gt; (Class:422a7514825b4d0b9ff9866222710877)" tid="" name="List&lt;GeometryObject&gt; (Class:422a7514825b4d0b9ff9866222710877)" description="" />
+    </custom-types>
+  </types>
+  <items>
+    <item id="874cb07e4c5a4e30b80a4f965b7a6208" cid="CMT001" type="comment" name="Comment" style-class="" owner="6c38ef9ced6b46b1b547c2173e552176" creator="" creation-date="03/18/2022 11:20:06">
+      <comment>Parent Class to all geometric "concret" objets like, points, lines, circles, surface and solids.</comment>
+    </item>
+    <item id="di899f4d4818dd4d2ca798baaeda4881684698" cid="CN001" type="comment-connector" name="" style-class="" creator="" creation-date="03/18/2022 11:20:06" from="874cb07e4c5a4e30b80a4f965b7a6208" to="422a7514825b4d0b9ff9866222710877" />
+    <item id="ad509c51e7d2411cb5824a11d0b9df6b" cid="CMT002" type="comment" name="Comment" style-class="" owner="6c38ef9ced6b46b1b547c2173e552176" creator="" creation-date="03/18/2022 11:22:31">
+      <comment>Parent Class to all abstract geometric objects, like vectors, planes.</comment>
+    </item>
+    <item id="di71697c32dcba4b10aa7c4ef0da7acfb05276" cid="CN002" type="comment-connector" name="" style-class="" creator="" creation-date="03/18/2022 11:22:31" from="ad509c51e7d2411cb5824a11d0b9df6b" to="5312892669064409888f5268021dcd29" />
+    <item id="6670268eac7143f3994c4438d7a5afb5" cid="ELEM002" type="property" name="boundingBox" style-class="" owner="422a7514825b4d0b9ff9866222710877" creator="" creation-date="03/18/2022 11:25:14" visibility="private">
+      <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+        <border color="#FF555555" width="2" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="solid" colors="#FF203D85,#FF203D85" />
+            <border color="#FF203D85" width="2" dash-style="Solid" />
+            <label-connector color="#80000000" width="1" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <feature />
+      <structural-feature type="" type-id="" />
+      <property />
+    </item>
+  </items>
+  <models>
+    <model id="p602368829e2d47949b6b4a112e5a5038_628796758" name="ClassDiagrams" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author>Ricardo Freitas</author>
+        </authors>
+        <description />
+        <creation-date>03/18/2022 11:05:50</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-class" id="p78608e964a3b4af4a2aa4b43e4905bf0_874476954" name="RevitAPIGeometryClassDiagram" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" view-location="-113,-108">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author>Ricardo Freitas</author>
+          </authors>
+          <description />
+          <creation-date>03/18/2022 11:05:50</creation-date>
+          <change-date>03/18/2022 11:47:20</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="422a7514825b4d0b9ff9866222710877" cid="C001" type="class" name="GeometryObject" style-class="" owner="6c38ef9ced6b46b1b547c2173e552176" change-tracking-state="added" creator="" creation-date="03/18/2022 11:07:51" visibility="undefined">
+            <owned-items>
+              <owned-item ref="6670268eac7143f3994c4438d7a5afb5" />
+              <owned-item ref="9db9697317904b4880f042a8a5a7f951" />
+              <owned-item ref="838b68c5c1344be992355a6c44cf2936" />
+            </owned-items>
+            <attributes>
+              <attribute id="a1328f2d951eb4d4688eb9229164ca9c4564" cid="ELEM002" name="boundingBox" creation-date="03/18/2022 11:25:14" property-ref="6670268eac7143f3994c4438d7a5afb5" />
+              <attribute id="a537c2512d5e24a22996aa1c32f473c8f646" cid="ELEM003" name="contextCoordinateSystem" creation-date="03/18/2022 11:35:33" property-ref="9db9697317904b4880f042a8a5a7f951" />
+              <attribute id="a5067ecf64f1a4ec487c7845ff36ee666440" cid="ELEM004" name="scaleFactor" creation-date="03/18/2022 11:36:25" property-ref="838b68c5c1344be992355a6c44cf2936" />
+            </attributes>
+            <operations>
+              <operation id="oee9e247a7cca410da0d662c355fd38c5196" cid="OP001" name="ClosestPointTo" creation-date="03/18/2022 11:31:28" type="" type-id="" visibility="public">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o1da2f27d03224403ba8779e22351f6d7491" cid="OP002" name="DistanceTo" creation-date="03/18/2022 11:45:18" type="double" type-id="CSharp.double" visibility="public" />
+              <operation id="oa9f4d46a00114a838cc9a55098334fee491" cid="OP003" name="DoesIntersect" creation-date="03/18/2022 11:45:18" type="bool" type-id="CSharp.bool" visibility="public" />
+              <operation id="o012fe3505faa46fe840e80227d59b961491" cid="OP004" name="Explode" creation-date="03/18/2022 11:45:18" type="List&lt;GeometryObject&gt; (Class:422a7514825b4d0b9ff9866222710877)" type-id="List&lt;GeometryObject&gt; (Class:422a7514825b4d0b9ff9866222710877)" visibility="public" />
+              <operation id="o00696517e0ac48cdabbecc3c31fa9ff7491" cid="OP005" name="Intersect" creation-date="03/18/2022 11:45:18" type="List&lt;GeometryObject&gt; (Class:422a7514825b4d0b9ff9866222710877)" type-id="List&lt;GeometryObject&gt; (Class:422a7514825b4d0b9ff9866222710877)" visibility="public" />
+              <operation id="o5b5c0d0da0fa4198bab0567c8e3947aa491" cid="OP006" name="Rotate" creation-date="03/18/2022 11:45:18" type="GeometryObject" type-id="Class:422a7514825b4d0b9ff9866222710877" visibility="public" />
+              <operation id="o2c7adbd7b4c54b85a4e76aac8c3c4e03491" cid="OP007" name="Scale" creation-date="03/18/2022 11:45:18" type="GeometryObject" type-id="Class:422a7514825b4d0b9ff9866222710877" visibility="public" />
+              <operation id="odefeb1e69186427c923805a202cec75a491" cid="OP008" name="Split" creation-date="03/18/2022 11:45:18" type="List&lt;GeometryObject&gt; (Class:422a7514825b4d0b9ff9866222710877)" type-id="List&lt;GeometryObject&gt; (Class:422a7514825b4d0b9ff9866222710877)" visibility="public" />
+              <operation id="o7febb2f6d576437390963b4bc4db7994491" cid="OP009" name="Transform" creation-date="03/18/2022 11:45:18" type="GeometryObject" type-id="Class:422a7514825b4d0b9ff9866222710877" visibility="public" />
+              <operation id="oaf2fc0fb2ba44488a0eaaaa1dd7296d6491" cid="OP010" name="Translate" creation-date="03/18/2022 11:45:18" type="GeometryObject" type-id="Class:422a7514825b4d0b9ff9866222710877" visibility="public" />
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="6c38ef9ced6b46b1b547c2173e552176" cid="PKG001" type="package" name="RevitAPIGeometry" style-class="" change-tracking-state="added" creator="" creation-date="03/18/2022 11:14:59">
+            <owned-items>
+              <owned-item ref="422a7514825b4d0b9ff9866222710877" />
+              <owned-item ref="ad509c51e7d2411cb5824a11d0b9df6b" />
+              <owned-item ref="874cb07e4c5a4e30b80a4f965b7a6208" />
+              <owned-item ref="5312892669064409888f5268021dcd29" />
+              <owned-item ref="1e40e850671841069a804262b7246a1e" />
+              <owned-item ref="e1f546a9fbdd4184ad0e25dd63e027fb" />
+            </owned-items>
+          </item>
+          <item id="5312892669064409888f5268021dcd29" cid="C002" type="class" name="AbstractGeometryObject" style-class="" owner="6c38ef9ced6b46b1b547c2173e552176" change-tracking-state="added" creator="" creation-date="03/18/2022 11:21:54" />
+          <item id="9db9697317904b4880f042a8a5a7f951" cid="ELEM003" type="property" name="contextCoordinateSystem" style-class="" owner="422a7514825b4d0b9ff9866222710877" creator="" creation-date="03/18/2022 11:35:33" visibility="private">
+            <feature />
+            <structural-feature type="" type-id="" />
+            <property>
+              <source-codes>
+                <source-code language="ActionScript" uid="scs-656f6425-5fcc-4685-a936-a83d9ff3d7fc" />
+              </source-codes>
+            </property>
+          </item>
+          <item id="838b68c5c1344be992355a6c44cf2936" cid="ELEM004" type="property" name="scaleFactor" style-class="" owner="422a7514825b4d0b9ff9866222710877" creator="" creation-date="03/18/2022 11:36:25" visibility="private">
+            <feature />
+            <structural-feature type="double" type-id="CSharp.double" />
+            <property>
+              <source-codes>
+                <source-code language="ActionScript" uid="scs-6584a629-9b42-478c-9b5e-91d680d726f9" />
+              </source-codes>
+            </property>
+          </item>
+          <item id="e1f546a9fbdd4184ad0e25dd63e027fb" cid="C004" type="class" name="Point" style-class="" owner="6c38ef9ced6b46b1b547c2173e552176" change-tracking-state="added" creator="" creation-date="03/18/2022 11:46:14">
+            <owned-items>
+              <owned-item ref="4746d96f53414bb798ef22071f881435" />
+              <owned-item ref="add079f36e11439381241a260a3a6841" />
+              <owned-item ref="67a40bd418ba42b78e7dc745408c66c2" />
+            </owned-items>
+            <attributes>
+              <attribute id="ad3a6626bbe9040d6ba5ce815f66dc800208" cid="ELEM005" name="x" creation-date="03/18/2022 11:48:00" property-ref="4746d96f53414bb798ef22071f881435" />
+              <attribute id="a40882f9bffcc45c49d84a8ea59b9e004261" cid="ELEM006" name="y" creation-date="03/18/2022 11:48:05" property-ref="add079f36e11439381241a260a3a6841" />
+              <attribute id="a4da84a73b3bd4410bbf7888a201f78ae123" cid="ELEM007" name="z" creation-date="03/18/2022 11:48:08" property-ref="67a40bd418ba42b78e7dc745408c66c2" />
+            </attributes>
+            <operations>
+              <operation id="o1293684168c240c9a51c587e9acc7d8b86" cid="OP011" name="Point" creation-date="03/18/2022 11:48:45" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p55f801fe3b554eb79ba6c6c6f9024b2b" name="x" type="" type-id="">
+                    <tagged-values>
+                      <tagged-value id="tv788e5f089e7b4724a08f52f14c356a35" name="set_x" type="reference" multiple="false" ref="4746d96f53414bb798ef22071f881435" />
+                    </tagged-values>
+                  </parameter>
+                  <parameter id="pd8b846aa5ffe40b6a6480b4d33907e8b" name="y" type="" type-id="">
+                    <tagged-values>
+                      <tagged-value id="tvc245f51598724124958f6edd5df9cdf3" name="set_y" type="reference" multiple="false" ref="add079f36e11439381241a260a3a6841" />
+                    </tagged-values>
+                  </parameter>
+                  <parameter id="pd62182c1e53d40a58ac035f99a3d331c" name="z" type="" type-id="">
+                    <tagged-values>
+                      <tagged-value id="tva7e28be0117b4426887b28469c79ce99" name="set_z" type="reference" multiple="false" ref="67a40bd418ba42b78e7dc745408c66c2" />
+                    </tagged-values>
+                  </parameter>
+                </parameters>
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+              </operation>
+            </operations>
+          </item>
+          <item id="1e40e850671841069a804262b7246a1e" cid="C005" type="class" name="Point" style-class="" owner="6c38ef9ced6b46b1b547c2173e552176" change-tracking-state="added" creator="" creation-date="03/18/2022 11:46:28" />
+          <item id="4093b5fd848b4517a64fe2aad6c353d8" cid="GNR001" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="03/18/2022 11:46:28" from="1e40e850671841069a804262b7246a1e" to="422a7514825b4d0b9ff9866222710877" visibility="package" />
+          <item id="1db5c495366e471482ce2bcec051c3a9" cid="C006" type="class" name="Point" style-class="" change-tracking-state="added" creator="" creation-date="03/18/2022 11:47:20" />
+          <item id="8074ad80ccf6455fbae6a16c56793799" cid="GNR002" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="03/18/2022 11:47:20" from="1db5c495366e471482ce2bcec051c3a9" to="422a7514825b4d0b9ff9866222710877" visibility="package" />
+          <item id="4746d96f53414bb798ef22071f881435" cid="ELEM005" type="property" name="x" style-class="" owner="e1f546a9fbdd4184ad0e25dd63e027fb" creator="" creation-date="03/18/2022 11:48:00" visibility="private">
+            <feature />
+            <structural-feature type="" type-id="" />
+            <property />
+          </item>
+          <item id="add079f36e11439381241a260a3a6841" cid="ELEM006" type="property" name="y" style-class="" owner="e1f546a9fbdd4184ad0e25dd63e027fb" creator="" creation-date="03/18/2022 11:48:05" visibility="private">
+            <feature />
+            <structural-feature type="" type-id="" />
+            <property />
+          </item>
+          <item id="67a40bd418ba42b78e7dc745408c66c2" cid="ELEM007" type="property" name="z" style-class="" owner="e1f546a9fbdd4184ad0e25dd63e027fb" creator="" creation-date="03/18/2022 11:48:08" visibility="private">
+            <feature />
+            <structural-feature type="" type-id="" />
+            <property />
+          </item>
+        </abstract-items>
+        <layer id="d402d6286c44488e8a4c0c5ca64d13da" name="Default" visible="true" enabled="true" locked="false">
+          <item id="6c38ef9ced6b46b1b547c2173e552176" iid="6d936f8942b4423996b8797b9d59b1cd" creation-date="03/18/2022 11:14:59" order-index="1" type="entity">
+            <layout ax="153" ay="16" awidth="2544" aheight="1350" x="153" y="16" width="2544" height="1350" rotation-center="-1122,-575" />
+            <package name-in-body="false" />
+          </item>
+          <item id="ad509c51e7d2411cb5824a11d0b9df6b" iid="3e6a957faefc4daaa2309674453d6c0b" container="6c38ef9ced6b46b1b547c2173e552176" container-iid="6d936f8942b4423996b8797b9d59b1cd" creation-date="03/18/2022 11:22:31" order-index="5" type="entity">
+            <layout ax="1069.5" ay="92" awidth="140" aheight="100" x="1069.5" y="92" width="140" height="100" />
+          </item>
+          <item id="422a7514825b4d0b9ff9866222710877" iid="fe91e4204d7a45c1b16821cb3fac2eeb" creation-date="03/18/2022 11:07:51" order-index="0" type="entity">
+            <layout ax="353" ay="243" awidth="517" aheight="363" x="353" y="243" width="517" height="363" rotation-center="-188.5,-101.5" />
+            <class />
+          </item>
+          <item id="874cb07e4c5a4e30b80a4f965b7a6208" iid="350a678da9104815b7d32f288d3de3cf" container="6c38ef9ced6b46b1b547c2173e552176" container-iid="6d936f8942b4423996b8797b9d59b1cd" creation-date="03/18/2022 11:20:06" order-index="2" type="entity">
+            <layout ax="422" ay="92" awidth="140" aheight="100" x="422" y="92" width="140" height="100" />
+          </item>
+          <item id="di71697c32dcba4b10aa7c4ef0da7acfb05276" iid="0d1ff05c10064d339f3214e318f56196" creation-date="03/18/2022 11:22:31" order-index="6" type="comment-connector">
+            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="1140" y1="192" x2="1140" y2="243" start-border-pos="0.624107142857143" end-border-pos="0.125338753387534" name-position="0,20">
+              <points>
+                <point x="1140" y="192" />
+                <point x="1140" y="243" />
+              </points>
+            </layout>
+            <relation from="ad509c51e7d2411cb5824a11d0b9df6b" from-iid="3e6a957faefc4daaa2309674453d6c0b" to="5312892669064409888f5268021dcd29" to-iid="631f5e095a254d8bb7dfe41cf3506072" />
+          </item>
+          <item id="di899f4d4818dd4d2ca798baaeda4881684698" iid="184d280b58014c88b53b31bad92bf7fb" creation-date="03/18/2022 11:20:06" order-index="3" type="comment-connector">
+            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="513" y1="192" x2="535" y2="243" start-border-pos="0.587006051199777" end-border-pos="0.0879974365234375" name-position="0,20">
+              <points>
+                <point x="513" y="192" />
+                <point x="535" y="243" />
+              </points>
+            </layout>
+            <relation from="874cb07e4c5a4e30b80a4f965b7a6208" from-iid="350a678da9104815b7d32f288d3de3cf" to="422a7514825b4d0b9ff9866222710877" to-iid="fe91e4204d7a45c1b16821cb3fac2eeb" />
+          </item>
+          <item id="5312892669064409888f5268021dcd29" iid="631f5e095a254d8bb7dfe41cf3506072" container="6c38ef9ced6b46b1b547c2173e552176" container-iid="6d936f8942b4423996b8797b9d59b1cd" creation-date="03/18/2022 11:21:54" order-index="4" type="entity">
+            <layout ax="955" ay="243" awidth="369" aheight="160" x="955" y="243" width="369" height="160" rotation-center="-114.5,0" />
+            <class />
+          </item>
+          <item id="e1f546a9fbdd4184ad0e25dd63e027fb" iid="68fe1e1b8f504d8aa3d28f874ce67c62" container="6c38ef9ced6b46b1b547c2173e552176" container-iid="6d936f8942b4423996b8797b9d59b1cd" creation-date="03/18/2022 11:47:20" order-index="7" type="entity">
+            <layout ax="353" ay="730.5428" awidth="517" aheight="362.9999" x="353" y="730.5428" width="140" height="160" />
+            <class />
+          </item>
+          <item id="8074ad80ccf6455fbae6a16c56793799" iid="05a908197e504efd855cb3272d687ce8" creation-date="03/18/2022 11:47:20" order-index="8" type="relation">
+            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="612" y1="731" x2="612" y2="606" start-border-pos="0.125241779497099" end-border-pos="0.624758220502901" name-position="0,20">
+              <points>
+                <point x="612" y="731" />
+                <point x="612" y="606" />
+              </points>
+            </layout>
+            <relation from="e1f546a9fbdd4184ad0e25dd63e027fb" from-iid="68fe1e1b8f504d8aa3d28f874ce67c62" to="422a7514825b4d0b9ff9866222710877" to-iid="fe91e4204d7a45c1b16821cb3fac2eeb" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
